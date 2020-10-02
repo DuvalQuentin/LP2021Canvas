@@ -27,5 +27,12 @@ class BookNormalizer implements ContextAwareNormalizerInterface
             "label" => $object->getLabel(),
             "isbn" => $object->getIsbn(),
             "category" => $object->getCategory()];
+
+        /*
+         * return json_encode(["id" => $object->getId(),
+            "label" => $object->getLabel(),
+            "isbn" => $object->getIsbn(),
+            "category" => $object->getCategory()]);
+         */
     }
 }

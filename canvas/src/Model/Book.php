@@ -41,6 +41,37 @@ class Book
         return $this->category;
     }
 
+    /**
+     * @param int $id
+     */
+    public function setId(int $id): void
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @param string $label
+     */
+    public function setLabel(string $label): void
+    {
+        $this->label = $label;
+    }
+
+    /**
+     * @param string $isbn
+     */
+    public function setIsbn(string $isbn): void
+    {
+        $this->isbn = $isbn;
+    }
+
+    /**
+     * @param string $category
+     */
+    public function setCategory(string $category): void
+    {
+        $this->category = $category;
+    }
 
 
 }

@@ -5,7 +5,18 @@
 # config/routes.yaml
 
 # the "hello" route name is not important yet
-hello:
-  path: /hello
-  controller: App\Controller\HelloController::_HelloBook
+bookGet:
+  path: /book
+  methods: Get
+  controller: App\Controller\HelloController::_Get
+
+bookPost:
+  path: /book
+  methods: Post
+  controller: App\Controller\HelloController::_Post
+
+bookPatch:
+  path: /book
+  methods: Patch
+  controller: App\Controller\HelloController::_Patch
 
