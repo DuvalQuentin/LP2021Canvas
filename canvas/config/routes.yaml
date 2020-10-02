@@ -2,3 +2,10 @@
 #    path: /
 #    controller: App\Controller\DefaultController::index
 
+# config/routes.yaml
+
+# the "hello" route name is not important yet
+hello:
+  path: /hello
+  controller: App\Controller\HelloController::_HelloBook
+
