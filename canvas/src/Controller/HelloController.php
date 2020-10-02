@@ -10,8 +10,6 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class HelloController extends AbstractController{
     public function _HelloBook(){
         $book = new Book (12, 'label', 'isbn', 'categorie');
-
-        return new Response((json_encode($book)));
-
+        return $this->json($book);
     }
 }

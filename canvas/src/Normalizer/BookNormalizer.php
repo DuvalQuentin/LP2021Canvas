@@ -4,21 +4,28 @@
 namespace App\Normalizer;
 
 
-use Zend\Code\Generator\InterfaceGenerator as InterfaceGeneratorAlias;
-use App\Entity\Topic;
-use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
+
+use App\Model\Book;
 use Symfony\Component\Serializer\Normalizer\ContextAwareNormalizerInterface;
-use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
 
-class BookNormalizer extends InterfaceGeneratorAlias
+class BookNormalizer implements ContextAwareNormalizerInterface
 {
-
-    private $router;
-    private $normalizer;
-
-
     public function supportsNormalization($data, string $format = null, array $context = [])
     {
-        return $data instanceof Topic;
+        return $data instanceof Book;
+    }
+
+    /**
+     * @param Book $object
+     * @param string|null $format
+     * @param array $context
+     * @return array|\ArrayObject|bool|float|int|string|null
+     */
+    public function normalize($object, string $format = null, array $context = [])
+    {
+        return ["id" => $object->getId(),
+            "label" => $object->getLabel(),
+            "isbn" => $object->getIsbn(),
+            "category" => $object->getCategory()];
     }
 }
