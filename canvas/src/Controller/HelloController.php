@@ -1,18 +1,17 @@
 <?php
-//src/Controller/HelloController.php
+
+
 namespace App\Controller;
 
 use App\Model\Book;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class HelloController extends AbstractController
-{
-    public function _HelloBook()
-    {
-        $unBook = new Book(1,'olala ce livr est vraiment...', 'super !', 'psychologie');
-        return new Response(
-            json_encode($unBook)
-        );
+class HelloController extends AbstractController{
+    public function _HelloBook(){
+        $book = new Book (12, 'label', 'isbn', 'categorie');
+
+        return new Response((json_encode($book)));
+
     }
 }
