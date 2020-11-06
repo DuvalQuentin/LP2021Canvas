@@ -8,11 +8,6 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\Controller\\BookController' => $baseDir . '/src/Controller/BookController.php',
     'App\\Controller\\HelloController' => $baseDir . '/src/Controller/HelloController.php',
-    'App\\Entity\\Author' => $baseDir . '/src/Entity/Author.php',
-    'App\\Entity\\Book' => $baseDir . '/src/Entity/Book.php',
-    'App\\Entity\\Category' => $baseDir . '/src/Entity/Category.php',
-    'App\\Entity\\Library' => $baseDir . '/src/Entity/Library.php',
-    'App\\Entity\\User' => $baseDir . '/src/Entity/User.php',
     'App\\Kernel' => $baseDir . '/src/Kernel.php',
     'App\\Model\\Book' => $baseDir . '/src/Model/Book.php',
     'App\\Normalizer\\BookNormalizer' => $baseDir . '/src/Normalizer/BookNormalizer.php',

@@ -334,11 +334,6 @@ class ComposerStaticInit8c9e584f376dbc24fede029e7db30cb0
     public static $classMap = array (
         'App\\Controller\\BookController' => __DIR__ . '/../..' . '/src/Controller/BookController.php',
         'App\\Controller\\HelloController' => __DIR__ . '/../..' . '/src/Controller/HelloController.php',
-        'App\\Entity\\Author' => __DIR__ . '/../..' . '/src/Entity/Author.php',
-        'App\\Entity\\Book' => __DIR__ . '/../..' . '/src/Entity/Book.php',
-        'App\\Entity\\Category' => __DIR__ . '/../..' . '/src/Entity/Category.php',
-        'App\\Entity\\Library' => __DIR__ . '/../..' . '/src/Entity/Library.php',
-        'App\\Entity\\User' => __DIR__ . '/../..' . '/src/Entity/User.php',
         'App\\Kernel' => __DIR__ . '/../..' . '/src/Kernel.php',
         'App\\Model\\Book' => __DIR__ . '/../..' . '/src/Model/Book.php',
         'App\\Normalizer\\BookNormalizer' => __DIR__ . '/../..' . '/src/Normalizer/BookNormalizer.php',
